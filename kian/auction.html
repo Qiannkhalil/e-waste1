@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Current Auction - E-Waste Bidding Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>E-Waste Bidding</h1>
+  <nav>
+  <a href="index.html" id="homeBtn">Home</a>
+  <a href="#" class="active">Current Auction</a>
+  <a href="index.html#about" id="aboutBtn">About</a>
+    <a href="login.html" id="loginBtn">Login</a>
+    <a href="#" id="logoutBtn">Logout</a>
+  </nav>
+</header>
+<div class="container">
+  <section class="auction-list">
+    <h2>Current Auction Items</h2>
+
+    <button id="showAddItemFormBtn" class="btn" style="margin-bottom:20px;">Add Item</button>
+    <form id="addItemForm" style="display:none; margin-bottom:30px;" onsubmit="return addAuctionItem(event)">
+      <h3>Add New Auction Item</h3>
+      <label for="itemTitle">Title</label>
+      <input type="text" id="itemTitle" required />
+      <label for="itemCondition">Condition</label>
+      <input type="text" id="itemCondition" required />
+      <label for="itemQuantity">Quantity</label>
+      <input type="number" id="itemQuantity" min="1" required />
+      <label for="itemLocation">Location</label>
+      <input type="text" id="itemLocation" required />
+      <label for="itemBid">Current Bid ($)</label>
+      <input type="number" id="itemBid" min="1" required />
+      <label for="itemImage">Image URL</label>
+      <input type="url" id="itemImage" required />
+      <button type="submit" class="btn">Add Item</button>
+      <button type="button" id="cancelAddItemBtn" class="btn" style="background:#ccc; color:#222; margin-left:10px;">Cancel</button>
+    </form>
+  </section>
+</div>
+<footer>
+  <p>© 2025 E-Waste Bidding Platform | Promote responsible recycling</p>
+</footer>
+<!-- Firebase scripts and config must be loaded above this line -->
+<script src="auction-persist.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

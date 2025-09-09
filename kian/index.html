@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    // Redirect to login.html if not logged in
+    if (!localStorage.getItem('loggedInUser')) {
+      window.location.href = 'login.html';
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E-Waste Bidding Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>E-Waste Bidding</h1>
+  <nav>
+  <a href="#" id="homeBtn">Home</a>
+  <a href="auction.html">Current Auction</a>
+  <a href="#about">About</a>
+  <a href="login.html" id="loginBtn">Login</a>
+  <a href="#" id="logoutBtn">Logout</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <section class="hero">
+    <h2>Welcome to the E-Waste Bidding Platform</h2>
+    <p>Buy and sell electronic waste responsibly with easy bidding and secure transactions.</p>
+    <a href="#auctions" class="btn">Browse Auctions</a>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature">
+      <h3>User Registration & Profiles</h3>
+      <p>Create accounts as buyers or sellers, manage your listings and bids.</p>
+
+      <section class="hero">
+        <h2>Welcome Sellers and Buyers!</h2>
+        <p>Join our E-Waste Bidding Platform to responsibly buy and sell electronic waste. Sellers can easily list items, and buyers can bid on a variety of electronics. Together, we make recycling easier and more rewarding!</p>
+        <a href="auction.html" class="btn">Go to Current Auction</a>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About This Website</h2>
+        <p>This platform connects sellers and buyers of e-waste, making it easy to recycle electronics and reduce environmental impact. Benefits include:</p>
+        <ul>
+          <li>Convenient online bidding for buyers and sellers</li>
+          <li>Promotes responsible recycling and reduces landfill waste</li>
+          <li>Supports a circular economy and sustainable practices</li>
+          <li>Easy to use for all ages and backgrounds</li>
+        </ul>
+        <p><strong>Impact:</strong> By using this platform, you help protect the environment, save resources, and create a cleaner future for everyone.</p>
+      </section>
+</html>

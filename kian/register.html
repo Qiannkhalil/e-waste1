@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register - E-Waste Bidding Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>E-Waste Bidding</h1>
+  <nav>
+    <a href="index.html#features">Features</a>
+    <a href="index.html#auctions">Auctions</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<div class="container">
+  <section id="register">
+    <h2>Register</h2>
+    <form onsubmit="return registerUser(event)">
+      <label for="username">Username</label>
+      <input type="text" id="username" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+
+    <label for="regPassword">Password</label>
+    <input type="password" id="regPassword" required />
+
+      <label for="userType">I am a:</label>
+      <select id="userType" required>
+        <option value="">Select</option>
+        <option value="seller">Seller</option>
+        <option value="buyer">Buyer</option>
+      </select>
+
+      <input type="submit" value="Register" />
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </section>
+</div>
+
+<footer>
+  <p>© 2025 E-Waste Bidding Platform | Promote responsible recycling</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
